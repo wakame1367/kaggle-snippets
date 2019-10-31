@@ -12,6 +12,7 @@ def extract_time_features(df: pd.DataFrame, time_col: str) -> pd.DataFrame:
     df['month'] = df[time_col].dt.month
     df['hour'] = df[time_col].dt.hour
     df['dayofweek'] = df[time_col].dt.dayofweek
+    df['is_weekend'] = df['dayofweek'].apply(lambda x: 1 if x in (5, 6) else 0)
     return df
 
 
