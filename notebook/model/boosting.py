@@ -17,6 +17,7 @@ def lightgbm_classifier():
     clf = lgb.train(params, lgb_train,
                     valid_sets=lgb_test)
     pred_y = clf.predict(test_x)
+    return pred_y
 
 
 def lightgbm_regression():
@@ -31,3 +32,4 @@ def lightgbm_regression():
     clf = lgb.train(params, lgb_train,
                     valid_sets=lgb_test)
     pred_y = clf.predict(test_x)
+    return pred_y
