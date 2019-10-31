@@ -9,6 +9,8 @@ scikit-learn = "*"
 pandas = "*"
 numba = "*"
 jpholiday = "*"
+lightgbm = "*"
+catboost = "*"
 
 [dev-packages]
 pytest = "*"
