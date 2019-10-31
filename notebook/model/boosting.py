@@ -13,11 +13,12 @@ def lightgbm_classifier():
     lgb_train = lgb.Dataset(train_x, label=train_y)
     lgb_test = lgb.Dataset(test_x, label=test_y)
 
-    params = {'objective': 'multiclass', 'num_class': 3}
+    params = {'objective': 'multiclass', 'num_class': 3,
+              'verbose': -1}
     clf = lgb.train(params, lgb_train,
-                    valid_sets=lgb_test)
+                    valid_sets=lgb_test, verbose_eval=False)
     pred_y = clf.predict(test_x)
-    return pred_y
+    print(pred_y)
 
 
 def lightgbm_regression():
@@ -28,8 +29,8 @@ def lightgbm_regression():
     lgb_train = lgb.Dataset(train_x, label=train_y)
     lgb_test = lgb.Dataset(test_x, label=test_y)
 
-    params = {'objective': 'regression'}
+    params = {'objective': 'regression', 'verbose': -1}
     clf = lgb.train(params, lgb_train,
-                    valid_sets=lgb_test)
+                    valid_sets=lgb_test, verbose_eval=False)
     pred_y = clf.predict(test_x)
-    return pred_y
+    print(pred_y)
