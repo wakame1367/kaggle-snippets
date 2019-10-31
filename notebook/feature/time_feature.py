@@ -31,7 +31,8 @@ def make_harmonic_features(value: int, period: int = 24) -> (float, float):
     周期的/循環性のある値とは例えば一日の時間(24時間)や日付(365日)
     Reference:
     https://www.kaggle.com/kashnitsky/topic-6-feature-engineering-and-feature-selection
-
+    https://qiita.com/shimopino/items/4ef78aa589e43f315113
+    
     :param value:
     :param period:
     :return:
