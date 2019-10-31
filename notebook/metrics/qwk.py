@@ -7,7 +7,7 @@ from numba import jit
 from sklearn.metrics import confusion_matrix
 
 
-def quad_kappa(act, pred, n=4, hist_range=(0, 3)):
+def quad_kappa(act, pred, n: int = 4, hist_range: tuple = (0, 3)) -> float:
     O = confusion_matrix(act, pred)
     O = np.divide(O, np.sum(O))
 
@@ -29,7 +29,7 @@ def quad_kappa(act, pred, n=4, hist_range=(0, 3)):
 
 
 @jit
-def qwk3(a1, a2, max_rat=3):
+def qwk3(a1, a2, max_rat: int = 3) -> float:
     assert (len(a1) == len(a2))
     a1 = np.asarray(a1, dtype=int)
     a2 = np.asarray(a2, dtype=int)

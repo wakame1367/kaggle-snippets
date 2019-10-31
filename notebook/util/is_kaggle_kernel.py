@@ -16,7 +16,7 @@ KAGGLE_ENV_KEYS = {'KAGGLE_KERNEL_INTEGRATIONS', 'KAGGLE_DATA_PROXY_TOKEN',
                    'KAGGLE_USER_SECRETS_TOKEN'}
 
 
-def is_kaggle_kernel():
+def is_kaggle_kernel() -> bool:
     current_running_kernel_keys = set(os.environ.keys())
     _is_kaggle_kernel = KAGGLE_ENV_KEYS.issubset(current_running_kernel_keys)
     return _is_kaggle_kernel
