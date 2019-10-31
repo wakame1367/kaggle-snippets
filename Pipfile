@@ -5,6 +5,9 @@ name = "pypi"
 
 [packages]
 pytest = "*"
+scikit-learn = "*"
+pandas = "*"
+numba = "*"
 
 [dev-packages]
 pytest = "*"
