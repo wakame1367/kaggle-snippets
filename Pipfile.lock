@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "999ec412e989542f0497914f69f266c6984a2dbcc4e12d2db5bb3e15023584ec"
+            "sha256": "8743f393b172dcae03a245044b9d53411690048251244f4cc0a756d515c6bae8"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -52,6 +52,14 @@
                 "sha256:6fcc57aacb4e89451fd449e9412687c51817c3f48662c3d8f38ba3f8a0a193ff"
             ],
             "version": "==0.14.0"
+        },
+        "jpholiday": {
+            "hashes": [
+                "sha256:29cedd5bdca1cc80c07d7131adb8ccd86c80178de7db83c5f5ded9736c453fc0",
+                "sha256:9dea08326ad7c1785215c808c106204d55b5c3b72ad35ffce89641b00185580e"
+            ],
+            "index": "pypi",
+            "version": "==0.0.7"
         },
         "llvmlite": {
             "hashes": [
