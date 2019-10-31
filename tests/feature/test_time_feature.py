@@ -21,7 +21,7 @@ def get_test_data():
 
 def test_extract_time_features(get_test_data):
     df, time_col = get_test_data
-    exp_cols = {time_col, 'date', 'month', 'hour', 'dayofweek'}
+    exp_cols = {time_col, 'date', 'month', 'hour', 'dayofweek', 'is_weekend'}
     result = extract_time_features(df, time_col)
     assert isinstance(result, pd.DataFrame)
     assert set(result.columns.tolist()).issubset(exp_cols)
