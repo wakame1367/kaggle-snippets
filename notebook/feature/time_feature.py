@@ -1,3 +1,7 @@
+"""
+jpholiday:
+https://github.com/Lalcs/jpholiday
+"""
 import jpholiday
 import pandas as pd
 
