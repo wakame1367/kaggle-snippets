@@ -31,7 +31,6 @@ class BaseOptimizedRounder(BaseEstimator):
             else:
                 X_p[i] = 4
 
-        print(coef)
         ll = cohen_kappa_score(y, X_p, weights='quadratic')
         return -ll
 
