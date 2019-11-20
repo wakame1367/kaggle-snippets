@@ -11,6 +11,7 @@ numba = "*"
 jpholiday = "*"
 lightgbm = "*"
 catboost = "*"
+category-encoders = "*"
 
 [dev-packages]
 pytest = "*"
