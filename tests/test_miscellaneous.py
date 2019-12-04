@@ -1,4 +1,4 @@
-from notebook.util.is_kaggle_kernel import is_kaggle_kernel
+from notebook.miscellaneous import is_kaggle_kernel
 
 
 def test_is_kaggle_kernel():
